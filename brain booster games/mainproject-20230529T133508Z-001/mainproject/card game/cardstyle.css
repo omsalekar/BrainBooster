@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 90vh;
+  background-color: skyblue;
+  display: flex;
+}
+
+
+#gameOver{
+  top: 50%;
+  left: 25%;
+  display: none;
+  position: absolute;
+  width: 50%;
+  background:pink;
+  z-index: 50;
+}
+
+#playAgain{
+  top: 110%;
+  left: 40%;
+  position: absolute;
+  width: 50%;
+  z-index: 950;
+  
+}
+
+.gameContainer {
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.card {
+  width: 23%;
+    height: 23%;
+    margin: 5px;
+    position: relative;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, .3);
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card:active {
+  transform: scale(.97);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.front,
+.back {
+  background-color:skyblue;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>card game</title>
+    <link rel="icon" href="card game\images\gamelogo.png" sizes="16x16" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="cardstyle.css" />
+  </head>
+  <body>
+   
+    
+    <div class="gameContainer">
+      <div class="container" style="padding: 10px; margin-top: -50px;">
+        <h3 class="text-center text-black ">Memory Quest</h3>
+        <div id="playAgain">
+          <button onclick="playAgain()" type="button" class="btn btn-warning">Tap to Start</button>
+        </div>
+      </div>
+      <div class="container row">
+        <h5 class="col text-left text-black">High Score <span id="highScore" class="badge badge-primary">0</span></h5>
+        <h5 class="col text-center text-black">Turns <span id="chancesLeft" class="badge badge-danger">0</span></h5>
+        <h5 class="col text-right text-black">Your Points <span id="points" class="badge badge-success">0</span></h5>
+      </div>
+      <div class="card" data-image="evilface">
+        <img src="images\evilface.png" class="front" alt="evilface" />
+        <img src="images\gamelogo.png"class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="evilface">
+        <img src="images\evilface.png" class="front" alt="evilface" />
+        <img src="images\gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="angryface">
+        <img src="images\angryface.png" class="front" alt="angryface" />
+        <img src="images\gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="angryface">
+        <img src="images\angryface.png" class="front" alt="angryface" />
+        <img src="images\gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="coolface">
+        <img src="images\coolface.png"  class="front" alt="coolface" />
+        <img src="images\gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="coolface">
+        <img src="images\coolface.png" class="front" alt="coolface" />
+        <img src="images\gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="feverface">
+        <img src="images\feverface.png" class="front" alt="feverface" />
+        <img src="images\gamelogo.png" class="back" alt="feverface" />
+      </div>
+      <div class="card" data-image="feverface">
+        <img src="images\feverface.png" class="front" alt="feverface" />
+        <img src="images\gamelogo.png" class="back" alt="feverface" />
+      </div>
+      <div class="card" data-image="vomitface">
+        <img src="images\vomitface.png" class="front" alt="vomitface" />
+        <img src="images\gamelogo.png" class="back" alt="vomitface" />
+      </div>
+      <div class="card" data-image="vomitface">
+        <img src ="images\vomitface.png" lass="front" alt="vomitface" />
+        <img src="images\gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="sneezeface">
+        <img src="images\sneezeface.png" class="front" alt="sneezeface" />
+        <img src="images\gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="sneezeface">
+        <img src="images\sneezeface.png" class="front" alt="sneezeface" />
+        <img src="images\gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="mindblownface">
+        <img src="images\mindblownface.png" class="front" alt="mindblownface" />
+        <img src="images\gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="mindblownface">
+        <img src="images\mindblownface.png" class="front" alt="mindblownface" />
+        <img src="images\gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="thinkingface">
+        <img src="images\thinkingface.png"  class="front" alt="thinkingface" />
+        <img src="images\gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="thinkingface">
+        <img src="images\thinkingface.png" class="front" alt="thinkingface" />
+        <img src="images\gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+    </div>
+    <div class="container" id="gameOver">
+      <div class="alert alert-warning text-center">
+        <strong id="game-over-text">Game Over !</strong>
+      </div>
+    </div>
+
+    <script src="cardscript.js"></script>
+  </body>
+</html>

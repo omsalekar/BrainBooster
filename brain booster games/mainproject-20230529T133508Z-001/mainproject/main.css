@@ -1,0 +1,51 @@
+
+  
+
+.group{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+body{
+    /* background-image: linear-gradient(white ,silver,gray,black); */
+    background: linear-gradient(+45deg, rgba(179, 238, 203, 0.626),rgba(185, 185, 230), rgba(238, 180, 117),rgba(164,242,196,0.869)) ;
+    
+}
+
+
+
+.part{
+    margin: auto;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: gray;
+    box-shadow:1px 1px 1px gray;
+    background-color: transparent;
+    height: 185px;
+    margin-top: 20px;
+}
+
+
+
+img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px black;
+}
+
+img:hover{
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px greenyellow;
+}
+
+
+
+.icon{
+    /* margin: 0px 600px 10px; */
+    margin: auto;
+    text-align: center;
+}
+
+
